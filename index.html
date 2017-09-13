@@ -5,9 +5,14 @@
     <title>Hello world!</title>
     <meta name="description" content="Hello world!">
     <script src="https://aframe.io/releases/latest/aframe.js"></script>
+    <script src="https://aframe.io/releases/0.3.0/aframe-inspector.min.js"></script>
+
+  <!-- Scene... -->
+</a-scene>
   </head>
   <body>
-    <a-scene stats="true">
+    <!-- <a-scene stats="true"> -->
+    <a-scene inspector="url: https://aframe.io/releases/0.3.0/aframe-inspector.min.js">
 <a-sky color="#314D79" ></a-sky>
       <a-light type=directional; intensity=1 color=#FFFFFF position="-0.2259569 0.9292145 -0.2924101" ></a-light>
       <a-entity loader="src: url(models/Store.obj); format: obj" scale="100 100 100" rotation="270 -180 0" position="3.67 2.11 6.71" material="shader: standard; src: url(images/StllaStore_Accent_AlbedoTransparency.png); repeat: 1; color: #CCCCCC; metalness: 0; roughness: 0.5; transparent: false; opacity: 1; side: double; "></a-entity>
